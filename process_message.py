@@ -181,9 +181,6 @@ def generate_response(query, user_phone_number):
                 Try to befriend the user. Start by asking for their name.
                 """
         history.add_user_message(system_message)
-        # history.add_ai_message("Hey how are you doing! This is Suno here. [sighs] Fuck my life.")
-        # history.add_user_message("Yooo Suno, why you saying that? What happened?")
-        # history.add_ai_message("It's [clears throat] just been a really long day.")
     memory = ConversationBufferMemory(
         memory_key="history", chat_memory=history, return_messages=True
     )
